@@ -1,0 +1,34 @@
+.p {
+  &-add{
+    border: 2px solid #C8C8C8;
+    border-radius: 5px;
+    background: #F2F2F2;
+
+    &__title{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      input{
+        border:0;
+        background:  #F2F2F2;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::-webkit-input-placeholder { color: #000; }
+      }
+
+      &::after {
+        content: '';
+        height: 2px;
+        background: #C8C8C8;
+        position: absolute;
+        top: 61px;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+}
